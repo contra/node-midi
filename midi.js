@@ -1,5 +1,8 @@
 var midi = require('bindings')('midi');
 var Stream = require('stream');
+var handler = require('segfault-handler');
+
+handler.registerHandler();
 
 // MIDI input inherits from EventEmitter
 var EventEmitter = require('events').EventEmitter;
